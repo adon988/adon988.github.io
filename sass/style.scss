@@ -82,7 +82,15 @@ header{
     @include breakpoint($pc){
       @include span(4);
     }
-
+    ul{
+      margin:0;
+      padding:0;
+      li{
+        list-style: none;
+        border-bottom: 1px #3c91a2 dotted;
+        font-size: 12px;
+      }
+    }
     img{
       border-radius: 10px;
     }
