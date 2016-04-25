@@ -25,7 +25,7 @@ body{
   max-width: 100%;
 }
 #ad{
-  background-color: #4aa8bb;
+  background-color: #3c91a2;
   color:white;
   padding:15px 0;
   .btn{
@@ -40,6 +40,10 @@ body{
     padding: 8px;
     text-decoration: none;
     border: 1px solid transparent;
+    display:inline-block;
+    @include breakpoint($pc) {
+      display: initial;
+    }
     &:hover{
       color:#f9f9f9;
       background-color: #0a0a0a;
