@@ -24,6 +24,28 @@ body{
   width:auto;
   max-width: 100%;
 }
+#ad{
+  background-color: #4aa8bb;
+  color:white;
+  padding:15px 0;
+  .btn{
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+    font-weight: bold;
+    color: #e0e0e0;
+    background-color: #212121;
+    border-color: #141414;
+    border-bottom-width: 2px;
+    text-shadow: none;
+    border-radius: 4px;
+    padding: 8px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    &:hover{
+      color:#f9f9f9;
+      background-color: #0a0a0a;
+    }
+  }
+}
 header{
   display:block;
   width:100%;
@@ -38,6 +60,10 @@ header{
     padding-left: 10px;
     color:#4E4E4E;
   }
+  .social-share{
+    padding:8px 10px;
+    display: inline-block;
+  }
 }
 
 .profile{
@@ -50,7 +76,7 @@ header{
       @include span(4);
     }
     @include breakpoint($pc){
-      @include span(2);
+      @include span(4);
     }
 
     img{
